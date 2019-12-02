@@ -1,0 +1,101 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    max-width: 80ch;
+    row-gap: 40px;
+}
+
+ul {
+    list-style-type: square;
+    margin: 0;
+}
+
+/* Resume */
+
+.education .degree {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+.education .date {
+    align-self: center;
+    font-size: 12px;
+}
+
+.education .school {
+    align-self: center;
+    font-size: 12px;
+}
+
+.education .title {
+    font-size: 16px;
+}
+
+.experience .job {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+.experience .job.travel {
+    border: 1px dashed lightgrey;
+}
+
+.experience .job .company {
+    font-size: 12px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.experience .job .date {
+    align-self: center;
+    font-size: 12px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.experience .job .description {
+    font-size: 12px;
+    grid-column: 1 / -1;
+    grid-row: 4;
+}
+
+.experience .job .location {
+    font-size: 12px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.experience .job .title {
+    font-size: 16px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.heading {
+    font-size: 24px;
+}

@@ -38,6 +38,7 @@ ul {
 .education .date {
     align-self: center;
     font-size: 12px;
+    text-align: end;
 }
 
 .education .school {
@@ -71,6 +72,7 @@ ul {
     font-size: 12px;
     grid-column: 2;
     grid-row: 1;
+    text-align: end;
 }
 
 .experience .job .description {

@@ -1,0 +1,115 @@
+/*
+#332127; purple
+#0A8E9E; teal
+#04717B; dark teal
+#56B692; blue-green
+#A48D58; sand
+*/
+
+a {
+    color: #332127;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #332127;
+}
+
+a:hover {
+    color: #A48D58;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    margin: auto;
+    max-width: 100px;
+}
+
+footer > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;    
+    list-style-type: none;
+    padding: 0;
+}
+
+footer > ul > li {
+    display: inline;
+    padding: 0;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+}
+
+footer > ul > li > a > img {
+    height: 32px;
+    opacity: 0.5;
+    width: 32px;
+}
+
+footer > ul > li > a > img:hover {
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+header {
+    margin: auto;
+    max-width: 600px;
+}
+
+main {
+    line-height: 1.5;
+    margin: auto;
+    max-width: 600px;
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+}
+
+nav > ul > li > a {
+    color: #0A8E9E;
+    font-weight: bold;
+}
+
+nav > ul > li > a:visited {
+    color: #0A8E9E;
+}
+
+nav > ul > li > a:hover {
+    color: #A48D58;
+}
+
+ul {
+    margin: 0;
+}

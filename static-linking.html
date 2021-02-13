@@ -38,23 +38,25 @@
 
     <main>
       <section>
+	<h2>Static Libraries in GCC</h2>
 	<p>
-	  I'm a software developer and graduate student at the University of Alberta. My interests lie at the intersection between traditional artificial intelligence and machine learning. Right now, I'm focused on algorithm generation as it relates to real-time pathfinding and heuristic search.
+	  Here's how to create a static library and link it using gcc.
 	</p>
-
+	<pre>
+	  gcc -c -o math.o math.c
+	  ar -rs libs/libmath.a math.o
+	  gcc -c -o app.o app.c
+	  gcc -o app.o app -Llib -lmath
+	</pre>
 	<p>
-	  Previously, I've worked on marketing technology at <a href="https://loknow.com/">LoKnow</a>, cloud management at <a href="https://ampliphae.com/">Ampliphae</a>, and social network analysis at AICML (now <a href="https://www.amii.ca/">amii</a>). In keeping with the times, machine learning using large datasets was a key factor at all of these companies.
+	  A few things to note:
 	</p>
-
 	<p>
-	  You can reach me at <b>gallivan.matt@gmail.com</b>.
+	  <ul>
+	    <li>The location (before or after the object files and executable) of where you the link the library file using <code>-l</code> matters.</li>
+	    <li>The name of the library file has to be prefixed with lib when using <code>-l</code>.</li>
+	  </ul>
 	</p>
-      </section>
-      <section>
-	<h2>Notes</h2>
-	<ul>
-	  <li><a href="static-linking.html">Static Libraries in GCC</a></li>
-	</ul>
       </section>
     </main>
 
